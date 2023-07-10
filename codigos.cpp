@@ -106,11 +106,35 @@ string verificaAnagramaDePalindromo(const string& entrada) {
     return "false";
 }
 int main(int argc, char const* argv[]) {
-    cout << reverterPalavras("Hello, World! OpenAI is amazing.") << endl;
-    cout << removerCaracteresDuplicados("Hello, World!") << endl;
-    cout << encontrarSubstringMaisLonga("babad!") << endl;
-    cout << primeiraLetraMaiucula("hello. how are you? i'm fine, thank you.") << endl;
-    cout << verificaAnagramaDePalindromo("racecar") << endl;
+    cout << "1. Reverte a ordem das palavras, mantendo a ordem das palavras." << endl;
+    string input = "Hello, World! OpenAI is amazing.";
+    cout << "input: " << input << endl;
+    cout << "output: " << reverterPalavras(input) << endl
+         << endl;
+
+    cout << "2. Remove dos caracteres duplicados." << endl;
+    input = "Hello, World!";
+    cout << "input: " << input << endl;
+    cout << "output: " << removerCaracteresDuplicados(input) << endl
+         << endl;
+
+    cout << "3. Encontra a substring palíndroma mais longa." << endl;
+    input = "babad!";
+    cout << "input: " << input << endl;
+    cout << "output: " << encontrarSubstringMaisLonga(input) << endl
+         << endl;
+
+    cout << "4. Coloca a primeira letra de cada palavra maiúscula." << endl;
+    input = "hello. how are you? i'm fine, thank you.";
+    cout << "input: " << input << endl;
+    cout << "output: " << primeiraLetraMaiucula(input) << endl
+         << endl;
+
+    cout << "5. Verifica se a string é um anagrama de palíndromo" << endl;
+    input = "racecar";
+    cout << "input: " << input << endl;
+    cout << "output: " << verificaAnagramaDePalindromo(input) << endl
+         << endl;
 
     return 0;
 }
